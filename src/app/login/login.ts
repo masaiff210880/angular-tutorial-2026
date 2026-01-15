@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Login {
   loginMessage = 'Please log in to continue.';
+  imgeUrl = "https://static.vecteezy.com/system/resources/thumbnails/053/733/179/small/every-detail-of-a-sleek-modern-car-captured-in-close-up-photo.jpg";
+  isDisabled = true;
+  inputValue = "Angular";
 }

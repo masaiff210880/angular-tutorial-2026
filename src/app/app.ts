@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { Login } from './login/login';
 import { Register } from './register/register';
+import { Counter } from './counter/counter';
 // import { RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [Login,Register],
+  imports: [Login,Register,Counter],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
