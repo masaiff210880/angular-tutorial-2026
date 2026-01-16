@@ -8,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Counter {
   count: number = 0;
+  email: string = '';
+
+  handleGetEmail=(email:string)=>{
+    this.email = email;
+  }
 
   // handleIncrement = () => {
   //   this.count++;

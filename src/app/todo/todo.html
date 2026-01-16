@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Todo Application</h1>
+   <div class="input-container">
+    <input (input)="handleInputChange($event.target.value)" [value]="todo().title" type="text" placeholder="Add a new todo" class="input-field" />
+    <button (click)="handleAddTodo()" class="add-button">Add</button>
+   </div>
+   @for(todo of todos(); track $index){
+   <div class="todo-list">
+
+        <h4>{{todo.title}}</h4>
+        <h4 (click)="handleCompleteTodo(todo.id)" style="cursor: pointer;">{{todo.completed ? 'Completed' : 'Not Completed'}}</h4>
+        <button (click)="handleDeleteTodo(todo.id)">Delete</button>
+    </div>
+}
+</div>

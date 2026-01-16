@@ -1,0 +1,16 @@
+<ul>
+  @for(item of items; track $index){
+  <li>{{ item }}</li>
+  }
+  <!-- <p>Total items: {{$count}}</p> -->
+</ul>
+
+<h3>Even Numbers</h3>
+
+<ul>
+  @if(numbers.length > 0){ @for(number of numbers; track $index){ 
+    <li [style.color]="$even ? 'red' : 'blue'">{{ number }}</li>
+  }}@else{
+  <li>Nubers list is empty please add some numbers</li>
+  }
+</ul>

@@ -7,3 +7,19 @@
 <input type="text" [value]="inputValue" />
 
 <button [disabled]="isDisabled" >Login</button>
+
+@if(isLoggedIn){
+    <h1>Hello Welcome to the Dashboard : {{name}}</h1>
+}@else{
+    <h1>Please login to continue</h1>
+}
+
+
+
+@if(!isLoggedIn){
+    <button (click)="handleUserAuth('login')">Login</button>
+}@else{
+    <button (click)="handleUserAuth('logout')">Logout</button>
+}
+
+

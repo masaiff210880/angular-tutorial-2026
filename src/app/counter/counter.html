@@ -7,3 +7,8 @@
     <button (click)="handleCounter('reset')">Reset</button>
  </div>
 </div>
+
+<input #inputValue placeholder="Enter email" />
+<button (click)="handleGetEmail(inputValue.value)">Submit</button>
+
+<p>Email: {{ email }}</p>

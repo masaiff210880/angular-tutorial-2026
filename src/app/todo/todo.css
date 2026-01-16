@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    /* padding: 20px; */
+    /* margin: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /* width: 50%; */
+    /* margin: auto; */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+    width: 80%;
+    margin: auto;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    outline: none;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+.add-button {
+
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: teal;
+    outline: none;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-within {
+        outline: none;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:focus-within {
+        outline: none;
+    }
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    /* padding: 10px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}

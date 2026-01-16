@@ -11,4 +11,18 @@ export class Login {
   imgeUrl = "https://static.vecteezy.com/system/resources/thumbnails/053/733/179/small/every-detail-of-a-sleek-modern-car-captured-in-close-up-photo.jpg";
   isDisabled = true;
   inputValue = "Angular";
+  name = 'Suraj';
+  isLoggedIn = false;
+
+  handleUserAuth=(action:string)=>{
+    switch(action){
+      case 'login': this.isLoggedIn = true;
+        break;
+        case 'logout': this.isLoggedIn = false;
+        break;
+        default: alert('Invalid action');
+        break;
+    }
+  }
+
 }
